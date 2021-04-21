@@ -1,7 +1,7 @@
-'use strict';
-
-module.exports = appServices;
-
-function appServices() {
-    // TODO
+class AppServices {
+    executeProcess = function () {
+        return true;
+    }
 }
+
+module.exports = AppServices;

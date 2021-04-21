@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "lint": "lerna exec --no-bail -- standard",
-    "test": "lerna run --no-bail test"
+    "test": "lerna run --no-bail test",
+    "start:node-service": "lerna exec --scope @monorepo/node-service -- npm run start"
   },
   "devDependencies": {
     "lerna": "^4.0.0",

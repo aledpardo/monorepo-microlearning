@@ -17,7 +17,8 @@
     "access": "public"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "start": "node ./lib/node-service.js"
   },
   "dependencies": {
     "@monorepo/app-services": "^0.0.0",

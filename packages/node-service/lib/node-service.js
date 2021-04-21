@@ -1,8 +1,6 @@
-'use strict';
 const AppServices = require('@monorepo/app-services');
+const appServices = new AppServices();
 
-module.exports = nodeService;
-
-function nodeService() {
-    // TODO
+if (appServices.executeProcess()) {
+    console.log('Process has run successfuly');
 }
