@@ -55,3 +55,13 @@ In `root` package:
 > This option works for both `lerna exec` and `lerna run` commands.
 
 * Add `build` script
+
+## Importing repositories into the Lerna monorepo
+
+> For this, you need the repo cloned to access it locally.
+
+1. `lerna import ../path/to/existing/repo --flatten --preserve-commit --dest=data-repository`
+
+* `--flatten` helps with merge commits which had conflicts, which could cause errors during the importing, *i.e. with each merge commit as a single change the merge introduced*
+* `--preserve-commit` option ensures we keep the original commit author and date
+* `--dest=<name>` specifies the destination directory for the package
